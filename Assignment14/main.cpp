@@ -21,6 +21,7 @@ Car::Car(int _, string __)
     yearModel = _;
     make = __;
     speed = 0;
+    cout << "New car created: " << yearModel << " " << make << endl;
 }
 int Car::getmodel(void)
 {
@@ -46,6 +47,7 @@ int main()
 {
     Car * rlyfastcar = new Car(2052,"Futuristic"); //create a really fast car
     int i; //for the sake of using the same variable
+    cout << rlyfastcar->getspeed() << endl;
     for (i=0;i<5;i++) //loop 5 times
     {
         rlyfastcar->accelerate();
