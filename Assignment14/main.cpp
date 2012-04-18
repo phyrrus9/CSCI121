@@ -71,7 +71,13 @@ void Car::brake(void)
 }
 int main()
 {
-    Car * rlyfastcar = new Car(2052,"Futuristic"); //create a really fast car
+    cout << "What is the make of your car? ";
+    string make;
+    cin >> make;
+    cout << "What is the model year? ";
+    int model;
+    cin >> model;
+    Car * rlyfastcar = new Car(model,make); //create a really fast car
     int i; //for the sake of using the same variable
     cout << rlyfastcar->getspeed() << endl;
     for (i=0;i<5;i++) //loop 5 times
